@@ -5,7 +5,76 @@
 
     <title>Edropp.se</title>
 
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ffa500;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        section p {
+            margin-bottom: 20px;
+            text-align: left;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content p {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .content img {
+            width: 500px;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 
 
@@ -21,14 +90,19 @@
     </nav>
 
     <main>
-        <section>
-            <h2>Om oss</h2>
-            <p>Edropp är ett företag som specialiserar sig på dropshipping, där vi hjälper entreprenörer att starta och 
-                driva sina egna e-handelsbutiker utan att behöva lagerhålla produkter. Genom vårt nätverk av pålitliga 
-                leverantörer kan våra kunder enkelt hitta och sälja produkter direkt till sina kunder, medan vi hanterar
-                 logistiken. Vår vision är att göra e-handel tillgängligt och lönsamt för alla som vill utveckla sin egen 
-                 affärsidé.
-            </p>
+        <section>  
+            <h2>Om oss</h2> 
+
+            <div class="content">
+
+                <p>Edropp är ett företag som specialiserar sig på dropshipping, där vi hjälper entreprenörer att starta och 
+                    driva sina egna e-handelsbutiker utan att behöva lagerhålla produkter. Genom vårt nätverk av pålitliga 
+                    leverantörer kan våra kunder enkelt hitta och sälja produkter direkt till sina kunder, medan vi hanterar
+                     logistiken. Vår vision är att göra e-handel tillgängligt och lönsamt för alla som vill utveckla sin egen 
+                     affärsidé.
+                </p>
+                <img src="DS bild.png" alt="dropshipping">
+            </div>
         </section>
 
         <section>
@@ -38,8 +112,6 @@
                 <li>Marknadsföring-kurs (Silver Paket)</li> <br>
                 <li>Leverantör-kurs (Guld Paket)</li>
             </ul>
-
-            <img src="DS bild.png" alt="dropshipping">
         </section>
        
     </main>
