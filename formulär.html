@@ -6,21 +6,40 @@
     <title>Edropp.se</title>
 </head>
 <body>
+    <header>
+        <h1>Välkommen till Edropp</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Startsida</a> 
+        <a href="formulär.html"><strong>Anmälan till kurser</strong></a> 
+        <a href="tabell.html">Kursöversikt</a>    
+    </nav>
+
     <form>
         <h1>Kunduppgifter</h1>
         <label for="Namn">Namn</label><br>
-        <input type="text" name="Namn" placeholder="Namn"><br>
+        <input type="text" name="Namn" placeholder="Namn"><br><br>
+
         <label for="Epostadress">Epostadress</label><br>
-        <input type="text" name="Epostadress" placeholder="Epostadress"><br>
+        <input type="text" name="Epostadress" placeholder="Epostadress"><br><br>
+
         <label for="Telefonnummer">Telefonnummer</label><br>
-        <input type="text" name="Telefonnummer" placeholder="+46"><br>
+        <input type="text" name="Telefonnummer" placeholder="+46"><br><br>
+
         <label for="Kursval">Kursval</label><br>
         <select id="Kursval">
             <option value="--Select--">--Select--</option>
             <option value="Grund-kurs">Grund-kurs</option>
             <option value="Marknadsföring-kurs">Marknadsföring-kurs</option>
             <option value="Leverantör-kurs">Leverantör-kurs</option>
-        </select>
+        </select><br><br>
+
+        <label for="Kommentar">Kommentar</label><br>
+        <textarea name="Kommentar">
+        </textarea><br><br> 
+
+        <input type="submit" name="skicka">
 
 
     </form>
