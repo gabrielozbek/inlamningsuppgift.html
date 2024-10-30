@@ -1,0 +1,99 @@
+    <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Edropp.se</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            form {
+                background-color: #fff;
+                max-width: 500px;
+                margin: 20px auto;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            }
+
+            form h1 {
+                color: #333;
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin: 8px 0 4px;
+            }
+
+            input[type="text"],select,
+            textarea {
+                width: 100%;
+                padding: 6px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            textarea {
+                resize: vertical;
+            }
+
+            input[type="submit"] {
+                background-color: #555;
+                color: #fff;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            input[tupe="submit"]:hover {
+                background-color: #ffa500;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Välkommen till Edropp</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Startsida</a> 
+            <a href="formular.html"><strong>Anmälan till kurser</strong></a> 
+            <a href="tabell.html">Kursöversikt</a>    
+        </nav>
+
+        <form>
+            <h1>Kunduppgifter</h1>
+            <label for="Förnamn">Namn</label><br>
+            <input type="text" id="Förnamn" name="Namn" placeholder="Ditt namn"><br><br>
+
+            <label for="Epostadress">Epostadress</label><br>
+            <input type="text" id="Epostadress" name="Epostadress" placeholder="Exempel@hotmail.com"><br><br>
+
+            <label for="Telefonnummer">Telefonnummer</label><br>
+            <input type="text" id="Telefonnummer" name="Telefonnummer" placeholder="+46"><br><br>
+
+            <label for="Kursval">Kursval</label><br>
+            <select id="Kursval">
+                <option value="--Välj--">--Välj--</option>
+                <option value="Grund-kurs">Grund-kurs</option>
+                <option value="Marknadsföring-kurs">Marknadsföring-kurs</option>
+                <option value="Leverantör-kurs">Leverantör-kurs</option>
+            </select><br><br>
+
+            <label for="Kommentar">Kommentar</label><br>
+            <textarea id="Kommentar" name="Kommentar"></textarea><br><br> 
+
+            <input type="submit" name="skicka">
+        </form>
+        
+    </body>
+    </html>
